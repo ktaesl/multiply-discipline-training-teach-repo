@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head><script>parent.postMessage({type:'gryphon:document'},'*')</script><script src="gryphon-runtime.js" onerror="parent.postMessage({type:'gryphon:bridge-error'},'*')"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Меню кафе Уютный стол: блюда, напитки и десерты.">
+  <title>Меню — Уютный стол</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Уютный стол — на главную">
+      <span class="brand-mark" aria-hidden="true">У</span>
+      <span>уютный<span class="brand-accent">стол</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#top">Главная</a>
+      <a class="active" href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="cart-link" href="#cart" aria-label="Корзина, 0 товаров">
+      <span aria-hidden="true">♧</span><span>Корзина</span><b class="cart-count">0</b>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ГОТОВИМ С ТЕПЛОМ КАЖДЫЙ ДЕНЬ</p>
+        <h1 id="page-title">Вкусная пауза<br>в вашем ритме</h1>
+        <p class="hero-description">Свежие блюда из простых ингредиентов — для уютного обеда и хорошего настроения.</p>
+        <a class="button button-light" href="#menu">Смотреть меню <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="plate"><div class="plate-inner"><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="tomato"></span><span class="bread"></span></div></div>
+        <span class="art-note">с любовью<br>к каждому блюду</span>
+      </div>
+      <div class="hero-bottom"><span>СВЕЖЕЕ • ЛОКАЛЬНОЕ • ВКУСНОЕ</span><span>01 / 04</span></div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> НАШЕ МЕНЮ</p><h2 id="menu-title">Выбирайте по настроению</h2></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" placeholder="Найти блюдо" aria-label="Найти блюдо"></label>
+      </div>
+      <nav class="category-nav" aria-label="Категории меню">
+        <a class="category active" href="#popular">Всё меню <span>12</span></a>
+        <a class="category" href="#breakfast">Завтраки</a>
+        <a class="category" href="#lunch">Основные блюда</a>
+        <a class="category" href="#drinks">Напитки</a>
+        <a class="category" href="#desserts">Десерты</a>
+      </nav>
+
+      <div class="menu-grid" id="popular">
+        <article class="dish-card" id="breakfast">
+          <div class="dish-image image-bowl"><span class="dish-tag">ХИТ</span><span class="food food-bowl" aria-hidden="true"><i></i><b></b></span></div>
+          <div class="dish-info"><div class="dish-title-row"><h3>Боул с авокадо</h3><span class="rating">★ 4.9</span></div><p>Киноа, авокадо, яйцо пашот и соус тахини</p><div class="dish-bottom"><strong>420 ₽</strong><button class="add-button" type="button" aria-label="Добавить Боул с авокадо в корзину">+</button></div></div>
+        </article>
+        <article class="dish-card" id="lunch">
+          <div class="dish-image image-pasta"><span class="food food-pasta" aria-hidden="true"><i></i><b></b></span></div>
+          <div class="dish-info"><div class="dish-title-row"><h3>Паста с грибами</h3><span class="rating">★ 4.8</span></div><p>Тальятелле, лесные грибы, сливочный соус</p><div class="dish-bottom"><strong>490 ₽</strong><button class="add-button" type="button" aria-label="Добавить Пасту с грибами в корзину">+</button></div></div>
+        </article>
+        <article class="dish-card" id="drinks">
+          <div class="dish-image image-soup"><span class="dish-tag tag-green">НОВИНКА</span><span class="food food-soup" aria-hidden="true"><i></i><b></b></span></div>
+          <div class="dish-info"><div class="dish-title-row"><h3>Крем-суп из тыквы</h3><span class="rating">★ 4.9</span></div><p>Тыква, кокосовое молоко, хрустящие семечки</p><div class="dish-bottom"><strong>350 ₽</strong><button class="add-button" type="button" aria-label="Добавить Крем-суп из тыквы в корзину">+</button></div></div>
+        </article>
+        <article class="dish-card" id="desserts">
+          <div class="dish-image image-cake"><span class="food food-cake" aria-hidden="true"><i></i><b></b></span></div>
+          <div class="dish-info"><div class="dish-title-row"><h3>Чизкейк с ягодами</h3><span class="rating">★ 5.0</span></div><p>Нежный сливочный чизкейк с сезонными ягодами</p><div class="dish-bottom"><strong>320 ₽</strong><button class="add-button" type="button" aria-label="Добавить Чизкейк с ягодами в корзину">+</button></div></div>
+        </article>
+      </div>
+      <div class="menu-more"><span>Показаны популярные блюда</span><a href="#menu">Все блюда <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">У</span><span>уютный<span class="brand-accent">стол</span></span></a><p>Место, где вкусно и по-домашнему.</p></div>
+    <div id="contacts"><span class="footer-label">ЗАХОДИТЕ В ГОСТИ</span><p>Ежедневно, 09:00–22:00<br>Москва, ул. Примерная, 12</p></div>
+    <a class="phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+  </footer>
+</body>
+</html>
